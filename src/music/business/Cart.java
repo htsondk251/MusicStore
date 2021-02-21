@@ -1,6 +1,7 @@
 package music.business;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 import music.business.LineItem;
@@ -53,7 +54,7 @@ public class Cart implements Serializable {
 	}
 
 
-	pubic void removeItem(LineItem item) {
+	public void removeItem(LineItem item) {
 		if (items.size()>0) {
 			String code = item.getProduct().getCode();
 			for (LineItem lineItem : items) {
@@ -61,6 +62,7 @@ public class Cart implements Serializable {
 					items.remove(lineItem);
 					return;
 				}
+			}
 		}
 	}
 }
