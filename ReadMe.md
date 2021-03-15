@@ -37,7 +37,7 @@ tomcat
 
 ```
 3. Run Tomcat (this app use Tomcat 8.5)
-4. Access at [http://localhost:8081/musicStore](http://localhost:8081/musicStore)
+4. Access at [http://localhost:8081/musicStore](http://localhost:8081/musicStore)  
 Homepage
-![](homapage.png)
+![](homepage.png)
 5. You can try listening short records, or register to buy CD(s)
