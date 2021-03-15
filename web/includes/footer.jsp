@@ -1,6 +1,5 @@
 	<footer>	
-		<p>&copy; Coypright ${currentYear} Mike Murach &amp; Associates, Inc.
-			All rights reserved.</p>
+		<p>&copy; Coypright ${currentYear} </p>
 	</footer>
     </body>
 </html>
