@@ -1,8 +1,9 @@
 # User's Guide
 
-This app is writen without using any IDE, so all the work of writing, compiling must be done manually.  
-1. compile all file in [src](src) into a directory named classes, with the same order (ex: src/music/business/ ... into classes/music/business/... ) 
-2. copy files into tomcat's webapps directory, the directory structure like below: 
+This app is written without using IDE, so all the work of writing, compiling must be done manually.  
+1. Compile all file in [src](src) into a directory named classes, with the same order (ex: src/music/business/ ... into classes/music/business/...)  
+This app uses some additional libraries: [servlet-api-3.1.jar](https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api/3.1.0), [apache.poi-3.7](https://mvnrepository.com/artifact/org.apache.poi/poi/3.7  
+2. Copy files into tomcat's webapps directory, the directory structure like below:  
 
 ```
 tomcat
@@ -35,5 +36,8 @@ tomcat
             └── lib (JAR files for Java class libraries)        
 
 ```
-3. run tomcat (this application use tomcat 8.5)
-4. access at [http://localhost:8080/musicStore](http://localhost:8080/musicStore)
+3. Run Tomcat (this app use Tomcat 8.5)
+4. Access at [http://localhost:8081/musicStore](http://localhost:8081/musicStore)
+Homepage
+![](homapage.png)
+5. You can try listening short records, or register to buy CD(s)
