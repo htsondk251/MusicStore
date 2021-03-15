@@ -1,8 +1,15 @@
 # User's Guide
 
 This app is written without using IDE, so all the work of writing, compiling must be done manually.  
-1. Compile all file in [src](src) into a directory named classes, with the same order (ex: src/music/business/ ... into classes/music/business/...)  
-This app uses some additional libraries: [servlet-api-3.1.jar](https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api/3.1.0), [apache.poi-3.7](https://mvnrepository.com/artifact/org.apache.poi/poi/3.7  
+1. Compile all file in [src](src) into a directory named classes, with the same order (ex: src/music/business/ ... into classes/music/business/ ...). Suggest using -d option:  
+```sh
+    cd **/src/
+    javac -d ./classes ./music/business/Product.java
+```
+This app uses some additional libraries: [servlet-api-3.1.jar](https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api/3.1.0), [apache.poi-3.7](https://mvnrepository.com/artifact/org.apache.poi/poi/3.7. For example:
+```sh
+    javac -d ./classes -cp ".;**/servlet-api-3.1/jar" ./music/util/CookieUtil.java
+```
 2. Copy files into tomcat's webapps directory, the directory structure like below:  
 
 ```
